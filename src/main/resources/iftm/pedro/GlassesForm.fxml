@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="605.0" stylesheets="@style/FormStyle.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iftm.pedro.controllers.GlassesFormController">
+   <children>
+      <VBox id="main-box" layoutX="-8.0" layoutY="-2.0" prefHeight="80.0" prefWidth="613.0">
+         <children>
+            <Pane id="bar-pane" prefHeight="25.0" prefWidth="612.0" />
+            <VBox id="main-vbox" alignment="CENTER" prefHeight="55.0" prefWidth="605.0">
+               <children>
+                  <Label id="title" text="CADASTRO DE PRODUTO" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <GridPane layoutX="50.0" layoutY="92.0" prefHeight="261.0" prefWidth="506.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="175.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="399.0" minWidth="10.0" prefWidth="349.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="120.0" minHeight="0.0" prefHeight="84.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="122.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="CÓDIGO" fx:id="codLabel" />
+            <TextField GridPane.columnIndex="1" fx:id="codTextField" />
+            <Label text="LINK DA IMAGEM" GridPane.rowIndex="1" />
+            <Label prefHeight="20.0" prefWidth="144.0" text="PRESCRIÇÃO MÉDICA" GridPane.rowIndex="2" />
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label id="obr-label" fx:id="isImageValid" />
+                  <TextField prefHeight="0.0" prefWidth="387.0" fx:id="imageTextField"/>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Label id="obr-label" fx:id="isPrescriptionValid" />
+                  <TextArea prefHeight="47.0" prefWidth="337.0" fx:id="prescriptionTextField" />
+               </children>
+            </VBox>
+            <HBox id="button-box" prefHeight="105.0" prefWidth="339.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Button id="action-button" mnemonicParsing="false" text="SALVAR" onAction="#onSaveAction" />
+                  <Button id="cancel-button" mnemonicParsing="false" prefWidth="110.0" text="CANCELAR" onAction="#onCancelAction" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

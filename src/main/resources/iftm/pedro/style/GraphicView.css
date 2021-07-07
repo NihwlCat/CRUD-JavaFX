@@ -1,0 +1,42 @@
+#title{
+    -fx-font-family: -apple-system;
+    -fx-font-size: 18px;
+    -fx-text-fill: #FFF;
+    -fx-font-weight: bold;
+}
+
+#main-box{
+    -fx-background-color: #FFF;
+    -fx-alignment: top;
+}
+
+#inner-box{
+    -fx-background-color: #2196F3;
+    -fx-spacing: 40px;
+    -fx-alignment: center;
+}
+
+#log-button{
+    -fx-text-fill: #212121;
+    -fx-pref-height: 32px;
+    -fx-pref-width: 80px;
+    -fx-font-weight: bold;
+    -fx-font-family: -apple-system;
+    -fx-background-color: #FFF;
+    -fx-effect: dropshadow( three-pass-box , #BDBDBD , 3, 0.3 , 0 , 1 );
+    -fx-background-radius: 10px;
+}
+
+#log-button:hover {
+    -fx-border-radius: 10px;
+    -fx-border-insets: -1 -1 -2 -2;
+    -fx-border-color: #607D8B;
+    -fx-border-width: 2.8;
+    -fx-cursor: hand;
+    -fx-effect: none;
+}
+
+#log-button:pressed {
+    -fx-background-color: #BBDEFB;
+    -fx-cursor: hand;
+}

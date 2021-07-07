@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="828.0" stylesheets="@style/LogView.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iftm.pedro.controllers.LogViewController">
+   <children>
+      <HBox id="main-box" minHeight="70" prefHeight="168.0" prefWidth="712.0">
+         <children>
+            <Label id="title" prefHeight="27.0" prefWidth="159.0" text="ADICIONAR" />
+            <HBox id="inner-box" maxHeight="100.0" maxWidth="500.0" prefHeight="100.0" prefWidth="500.0">
+               <children>
+                  <Button id="log-button" mnemonicParsing="false" onAction="#onButton1Action" prefHeight="40.0" prefWidth="91.0" text="CLIENTE" />
+                  <Button id="log-button" mnemonicParsing="false" onAction="#onButton1Action" text="PRODUTO" />
+                  <Button id="log-button" mnemonicParsing="false" onAction="#onButton1Action" prefHeight="32.0" text="PEDIDO" />
+                  <Button id="log-button" mnemonicParsing="false" onAction="#onActionReturn" text="VOLTAR" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <TabPane minHeight="-Infinity" prefHeight="507.0" prefWidth="828.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="CLIENTES">
+            <content>
+                  <TableView fx:id="clientTableView" prefHeight="389.0" prefWidth="712.0">
+                    <columns>
+                      <TableColumn fx:id="clientCpfColumn" minWidth="80.0" text="CPF" />
+                      <TableColumn fx:id="clientNameColumn" minWidth="180.0" prefWidth="180.0" text="NOME" />
+                        <TableColumn fx:id="clientAddressColumn" minWidth="180.0" prefWidth="180.0" text="ENDEREÇO" />
+                        <TableColumn fx:id="clientEmailColumn" minWidth="180.0" prefWidth="180.0" text="EMAIL" />
+                        <TableColumn fx:id="clientPhoneColumn" minWidth="100.0" prefWidth="100.0" text="TELEFONE" />
+                        <TableColumn fx:id="clientInstagramColumn" minWidth="120.0" prefWidth="120.0" text="INSTAGRAM" />
+                        <TableColumn fx:id="EDITcolumn" minWidth="75.0" prefWidth="75.0" />
+                        <TableColumn fx:id="REMOVEcolumn" minWidth="75.0" prefWidth="75.0" />
+                    </columns>
+                  </TableView>
+            </content>
+          </Tab>
+          <Tab text="PRODUTOS">
+            <content>
+                  <TableView fx:id="glassesTableView" prefHeight="389.0" prefWidth="712.0">
+                    <columns>
+                      <TableColumn fx:id="glassesIdColumn" minWidth="100.0" prefWidth="100.0" text="ID" />
+                      <TableColumn fx:id="glassesImageColumn" minWidth="200.0" prefWidth="200.0" text="IMAGEM" />
+                        <TableColumn fx:id="glassesPrescriptionColumn" minWidth="250.0" prefWidth="250.0" text="DESCRIÇÃO" />
+                        <TableColumn fx:id="glassesEDITcolumn" minWidth="75.0" prefWidth="75.0" />
+                        <TableColumn fx:id="glassesREMOVEcolumn" minWidth="75.0" prefWidth="75.0" />
+                    </columns>
+                  </TableView>
+            </content>
+          </Tab>
+            <Tab text="PEDIDOS">
+                <content>
+                  <TableView fx:id="orderTableView" prefHeight="389.0" prefWidth="712.0">
+                    <columns>
+                      <TableColumn fx:id="orderIdColumn" minWidth="100.0" prefWidth="100.0" text="CÓDIGO" />
+                      <TableColumn fx:id="orderDateColumn" minWidth="120.0" prefWidth="120.0" text="DATA" />
+                        <TableColumn fx:id="orderClientColumn" minWidth="120.0" prefWidth="120.0" text="CLIENTE" />
+                        <TableColumn fx:id="orderGlassesColumn" minWidth="100.0" prefWidth="100.0" text="ÓCULOS" />
+                        <TableColumn fx:id="orderPriceColumn" minWidth="120.0" prefWidth="120.0" text="PREÇO" />
+                        <TableColumn fx:id="orderDiscountColumn" minWidth="120.0" prefWidth="120.0" text="DESCONTO" />
+                        <TableColumn fx:id="orderEDITcolumn" minWidth="75.0" prefWidth="75.0" />
+                        <TableColumn fx:id="orderREMOVEcolumn" minWidth="75.0" prefWidth="75.0" />
+                    </columns>
+                  </TableView>
+                </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>

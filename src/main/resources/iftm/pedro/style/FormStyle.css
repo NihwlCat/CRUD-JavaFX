@@ -1,0 +1,60 @@
+.root {
+    font-family: -apple-system;
+}
+
+#obr-label {
+    -fx-text-fill: red;
+    -fx-font-weight: normal;
+}
+
+#bar-pane {
+    -fx-background-color: #1976D2;
+}
+
+#main-vbox {
+    -fx-background-color: #2196F3;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #212121;
+    -fx-font-weight: bold;
+}
+
+#title {
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+}
+
+#button-box {
+    -fx-alignment: center;
+    -fx-spacing: 25px;
+}
+
+#action-button, #cancel-button{
+    -fx-text-fill: #212121;
+    -fx-pref-height: 32px;
+    -fx-pref-width: 110px;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-border-color: #2196F3;
+    -fx-border-radius: 10px;
+    -fx-border-width: 2.8;
+}
+
+#action-button:hover {
+    -fx-background-radius: 10px;
+    -fx-background-color: #BBDEFB;
+    -fx-opacity: 50;
+    -fx-background-insets: 1 1 1 1;
+}
+
+#cancel-button:hover {
+    -fx-background-radius: 10px;
+    -fx-background-color: rgba(205, 85, 48, 0.8);
+    -fx-border-color: rgba(205, 85, 48, 0.9);
+    -fx-text-fill: #FFF;
+    -fx-background-insets: 1 1 1 1;
+}
+

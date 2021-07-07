@@ -1,0 +1,56 @@
+.root {
+    -fx-background-color: #FFF;
+    -fx-font-family: -apple-system;
+    -fx-fit-to-width: true;
+    -fx-fit-to-height: true;
+}
+
+#main-vbox{
+    -fx-background-color: #FFF;
+}
+
+#content-box{
+    -fx-fill-height: true;
+    -fx-alignment: top-center;
+    -fx-spacing: 30px;
+    -fx-padding: 50;
+}
+
+#title-pane {
+    -fx-background-color: #2196F3;
+    -fx-alignment: center;
+}
+
+#bar-pane {
+    -fx-background-color: #1976D2;
+}
+
+#title-label {
+    -fx-font-family: -apple-system;
+    -fx-font-size: 25px;
+    -fx-text-fill: #FFF;
+    -fx-font-weight: bold;
+}
+
+#main-button {
+    -fx-font-weight: bold;
+    -fx-font-family: -apple-system;
+    -fx-pref-height: 100px;
+    -fx-pref-width: 130px;
+    -fx-background-color: #FFF;
+    -fx-effect: dropshadow( three-pass-box , #BDBDBD , 3, 0.0 , 0 , 1 );
+    -fx-background-radius: 15px;
+}
+
+#main-button:hover {
+    -fx-border-radius: 15px;
+    -fx-border-color: #2196F3;
+    -fx-border-width: 1.8;
+    -fx-cursor: hand;
+    -fx-effect: none;
+}
+
+#main-button:pressed {
+    -fx-background-color: #BBDEFB;
+    -fx-cursor: hand;
+}

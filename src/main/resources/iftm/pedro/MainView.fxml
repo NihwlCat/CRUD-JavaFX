@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="1026.0" stylesheets="@style/MainView.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iftm.pedro.controllers.MainViewController">
+   <content>
+      <VBox id="main-vbox" prefHeight="477.0" prefWidth="761.0">
+         <children>
+            <VBox id="title-box" prefHeight="85.0" prefWidth="508.0">
+               <children>
+                  <Pane id="bar-pane" minHeight="25.0" prefHeight="25.0" prefWidth="541.0" />
+                  <VBox id="title-pane" minHeight="60" prefHeight="60.0" prefWidth="435.0">
+                     <children>
+                        <Label id="title-label" text="MENU PRINCIPAL" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox id="content-box" prefHeight="449.0" prefWidth="909.0">
+               <children>
+                  <Button id="main-button" mnemonicParsing="false" onAction="#onButton1Action" text="REGISTROS" />
+                  <Button id="main-button" mnemonicParsing="false" onAction="#onButton2Action" prefHeight="25.0" prefWidth="131.0" text="EXPORTAR DADOS" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
